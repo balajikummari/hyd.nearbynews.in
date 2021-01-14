@@ -376,14 +376,14 @@ a.know-more::after {
   letter-spacing: -0.55px;
 }
 
-.section-4 p {
+/* .section-4 p {
   max-width: 531px;
   text-align: left;
   font: normal normal normal 23px/29px "HK Grotesk";
   letter-spacing: -0.23px;
   color: #9999a5;
   text-transform: capitalize;
-}
+} */
 
 footer {
   background: transparent linear-gradient(292deg, #ffffff 0%, #e19d00 100%) 0%
@@ -684,9 +684,11 @@ footer .content h3 {
   }
   .section-1,
   .section-2,
-  .section-3,
-  .section-4 {
+  .section-3 {
     margin: 60px auto;
+  }
+  .section-4 {
+    margin: 135px auto;
   }
 
   .section-2 h3,
@@ -718,8 +720,11 @@ footer .content h3 {
     position: relative;
     max-width: 78% !important;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -40%);
     width: 100%;
+  }
+  .spamcon {
+    transform: translateY(-26%);
   }
 
   .section-3 .left img {
@@ -752,7 +757,7 @@ footer .content h3 {
 
 #subHighlight {
   font-weight: 500;
-  font: normal normal bold 18px/37px poppins;
+  font: normal normal bold 15px/37px poppins;
 }
 
 #subHighlight2 {
@@ -765,4 +770,15 @@ select option {
   background: rgba(0, 0, 0, 0.2);
   color: #00193b;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.dontspam {
+  text-align: left;
+  font: normal normal 400 28px "HK Grotesk" !important;
+  letter-spacing: -0.31px;
+}
+.dontspamdesc {
+  max-width: 470px;
+  font: normal normal normal 17px/25px "HK Grotesk";
+  color: #9999a5;
 }
