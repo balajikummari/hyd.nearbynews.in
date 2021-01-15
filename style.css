@@ -134,7 +134,7 @@ select {
 
 #pincode,
 #city {
-  max-width: 100%;
+  max-width: 20%;
   width: 100%;
 }
 
