@@ -134,7 +134,8 @@ select {
 
 #pincode,
 #city {
-  max-width: 146px;
+  max-width: 100%;
+  width: 100%;
 }
 
 #email {
@@ -266,7 +267,7 @@ input[type="submit"] {
 .section-2,
 .section-3,
 .section-4 {
-  min-height: 70vh;
+  min-height: 60vh;
   max-width: 75%;
   margin: 40px auto;
 }
@@ -476,27 +477,6 @@ footer .content h3 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1280px) {
-  .section-2 img {
-    width: 60%;
-  }
-
-  .section-2 h3,
-  .section-2 p,
-  .section-4 p {
-    max-width: 60% !important;
-  }
-
-  .section-2 .by2,
-  .section-4 .by2 {
-    padding: 5px 30px;
-  }
-
-  .section-4 img {
-    max-width: 40%;
-  }
-}
-
 @media screen and (max-width: 1080px) {
   p {
     font-size: 18px;
@@ -558,6 +538,11 @@ footer .content h3 {
     min-height: 60vh;
     max-width: 95%;
     margin: 30px auto;
+  }
+  #pincode,
+  #email {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
