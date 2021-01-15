@@ -170,6 +170,7 @@
           </div>
         </div>
       </section>
+
       <!-- <section class="by2 section-3">
         <div class="left">
           <img src="assets/social-posts.png" alt="social posts" width="700px" />
@@ -180,6 +181,74 @@
           <a class="cta" href="#">Check us out</a>
         </div>
       </section> -->
+      <section class="section-testimonials">
+        <h1 class="hydlove">Hyderabad 💖 us</h1>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <q
+              >I was a morning newspaper person earlier but moved to social
+              media slowly and unknowingly. Now this digital e-paper on mail
+              every day gives me a combination of both the experiences</q
+            >
+            <p class="author">Niharika Gupta | Begumpet</p>
+          </div>
+
+          <div class="mySlides">
+            <q
+              >I consume State and National News from Apps and TV, but staying
+              connected with News around me and the city has always been a
+              problem, but not anymore because of Nearby News</q
+            >
+            <p class="author">Ujwal Gattupalli | Kukatpally</p>
+          </div>
+
+          <div class="mySlides">
+            <q
+              >I am from North India who recently moved to Hyderabad for work,
+              as someone who loves to explore cities I find Nearby News very
+              relevant for events, updates and history of the city. I feel half
+              Hyderabadi now</q
+            >
+            <p class="author">Navneet Kumar | Gachibowli</p>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </section>
+
       <section class="section-4">
         <div class="by2">
           <div>

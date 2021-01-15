@@ -477,6 +477,16 @@ footer .content h3 {
   font-weight: bold;
 }
 
+.hydlove {
+  font-size: 3rem;
+  text-align: center;
+}
+.section-testimonials {
+  margin: 5rem 0rem;
+}
+q {
+  font-size: large;
+}
 @media screen and (max-width: 1080px) {
   p {
     font-size: 18px;
@@ -605,6 +615,13 @@ footer .content h3 {
 }
 
 @media screen and (max-width: 520px) {
+  .hydlove {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .section-testimonials {
+    margin: 0rem 0rem;
+  }
   #pincode,
   #city {
     width: 47%;
@@ -673,7 +690,7 @@ footer .content h3 {
     margin: 60px auto;
   }
   .section-4 {
-    margin: 135px auto;
+    margin: 80px auto;
   }
 
   .section-2 h3,
@@ -778,4 +795,57 @@ select option {
   max-width: 470px;
   font: normal normal normal 17px/25px "HK Grotesk";
   color: #9999a5;
+}
+
+.slideshow-container {
+  position: relative;
+  background: transparent;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+  text-align: center;
 }
