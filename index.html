@@ -3,33 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- Primary Meta Tags -->
-<title>Nearbynews - Hyderabad</title>
-<meta name="title" content="Nearbynews - Hyderabad">
-<meta name="description" content="Get your local newspaper delivered to your Email at 7am everyday
-Experience the modern way of reading newspapers - Zero Spam,
-no app needed and free forever!
-">
+    <!-- Primary Meta Tags -->
+    <title>Nearbynews - Hyderabad</title>
+    <meta name="title" content="Nearbynews - Hyderabad" />
+    <meta name="description" content="Be smarter about 'Local' in 5 minutes" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hyd.nearbynews.in/" />
+    <meta property="og:title" content="Nearbynews - Hyderabad" />
+    <meta
+      property="og:description"
+      content="Be smarter about 'Local' in 5 minutes"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/nearbynews/image/upload/v1610632821/unnamed_1_sov15d.png"
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hyd.nearbynews.in/">
-<meta property="og:title" content="Nearbynews - Hyderabad">
-<meta property="og:description" content="Get your local newspaper delivered to your Email at 7am everyday
-Experience the modern way of reading newspapers - Zero Spam,
-no app needed and free forever!
-">
-<meta property="og:image" content="https://res.cloudinary.com/nearbynews/image/upload/v1610632821/unnamed_1_sov15d.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://hyd.nearbynews.in/">
-<meta property="twitter:title" content="Nearbynews - Hyderabad">
-<meta property="twitter:description" content="Get your local newspaper delivered to your Email at 7am everyday
-Experience the modern way of reading newspapers - Zero Spam,
-no app needed and free forever!
-">
-<meta property="twitter:image" content="https://res.cloudinary.com/nearbynews/image/upload/v1610632821/unnamed_1_sov15d.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hyd.nearbynews.in/" />
+    <meta property="twitter:title" content="Nearbynews - Hyderabad" />
+    <meta
+      property="twitter:description"
+      content="Get your local newspaper delivered to your Email at 7am everyday
+      Experience the modern way of reading newspapers - Zero Spam,
+      no app needed and free forever!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/nearbynews/image/upload/v1610632821/unnamed_1_sov15d.png"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
@@ -44,13 +48,6 @@ no app needed and free forever!
           <img src="assets/nearbynews.png" alt="Nearby News Logo" width="180" />
         </a>
       </div>
-      <!-- <nav>
-        <a href="#">Home</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Top Stories</a>
-        <a href="#">City Speaks</a>
-        <a class="cta" href="#">Sign Up</a>
-      </nav> -->
     </header>
     <main>
       <section class="by2">
@@ -110,8 +107,7 @@ no app needed and free forever!
         <div class="right">
           <h2>Know your Neighbourhood with NearBy News</h2>
           <p>
-            News that brings the community together.
-            Know what’s going on in
+            News that brings the community together. Know what’s going on in
             your city corners and be closer to your community.
           </p>
         </div>
@@ -170,13 +166,24 @@ no app needed and free forever!
           </div>
           <div class="spamcon">
             <h2 class="dontspam">We don’t spam you!</h2>
-            <p class="dontspamdesc">You May Not Want To Add Clutter To Your Inbox And We Understand It! 
-              You Can Undo Your Subscription Anytime And We Don’t Hide Our Unsubscribe Button Ever.</p>
+            <p class="dontspamdesc">
+              You May Not Want To Add Clutter To Your Inbox And We Understand
+              It! You Can Undo Your Subscription Anytime And We Don’t Hide Our
+              Unsubscribe Button Ever.
+            </p>
             <form
               id="signup3"
               action="https://nearbynews.in/api/subscribe"
               method="GET"
             >
+              <input
+                type="number"
+                name="pincode"
+                id="pincode"
+                placeholder="Pincode"
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Pincode'"
+              />
               <div class="last">
                 <input
                   type="email"
@@ -202,6 +209,15 @@ no app needed and free forever!
             action="https://nearbynews.in/api/subscribe"
             method="GET"
           >
+            <input
+              type="number"
+              name="pincode"
+              id="pincode"
+              placeholder="Pincode"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'Pincode'"
+              style="border: 3px solid #0448a6; color: #0448a6"
+            />
             <div class="last">
               <input
                 type="email"

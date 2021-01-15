@@ -402,7 +402,7 @@ footer .content {
 
 footer .left,
 footer .right {
-  width: 30%;
+  width: 40%;
 }
 
 footer .content .right {
@@ -675,7 +675,7 @@ footer .content h3 {
 
   #pincode,
   #city {
-    width: 46%;
+    width: 100%;
   }
 
   .below-hero h4 {
@@ -699,7 +699,7 @@ footer .content h3 {
 
   .section-2 .by2 {
     flex-wrap: wrap;
-    min-height: 97vh;
+    min-height: 70vh;
   }
 
   .section-2 .left {
@@ -708,12 +708,13 @@ footer .content h3 {
   }
 
   .section-2 img {
-    width: 80%;
+    width: 90%;
   }
 
   .section-4 .by2 {
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: 65vh;
+    padding-top: 15px;
   }
 
   .section-4 img {
@@ -758,6 +759,8 @@ footer .content h3 {
 #subHighlight {
   font-weight: 500;
   font: normal normal bold 15px/37px poppins;
+  line-height: inherit;
+  padding-bottom: 15px;
 }
 
 #subHighlight2 {
