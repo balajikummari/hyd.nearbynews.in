@@ -485,7 +485,7 @@ footer .content h3 {
   margin: 5rem 0rem;
 }
 q {
-  font-size: large;
+  font-size: x-large;
 }
 @media screen and (max-width: 1080px) {
   p {
@@ -621,6 +621,9 @@ q {
   }
   .section-testimonials {
     margin: 0rem 0rem;
+  }
+  q {
+    font-size: large;
   }
   #pincode,
   #city {
