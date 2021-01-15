@@ -40,6 +40,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-589113960"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YJLWJRJYCK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-589113960", { page_path: window.location.pathname });
+    </script>
   </head>
   <body>
     <header>
@@ -80,6 +96,7 @@
             />
             <div class="last">
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -87,7 +104,11 @@
                 onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Email ID'"
               />
-              <input type="submit" value="Try It" />
+              <input
+                type="submit"
+                value="Try It"
+                onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+              />
             </div>
           </form>
         </div>
@@ -192,8 +213,13 @@
                   placeholder="Email ID"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Email ID'"
+                  required
                 />
-                <input type="submit" value="Try It" />
+                <input
+                  type="submit"
+                  value="Try It"
+                  onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+                />
               </div>
             </form>
           </div>
@@ -227,8 +253,13 @@
                 onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Email ID'"
                 style="border: 3px solid #0448a6; color: #0448a6"
+                required
               />
-              <input type="submit" value="Try It" />
+              <input
+                type="submit"
+                value="Try It"
+                onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+              />
             </div>
           </form>
           <!-- <div class="feedback">
