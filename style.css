@@ -759,12 +759,12 @@ q {
   }
 
   .by2 {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
   }
 
   .hero-right {
-    padding: 40px;
+    padding: 0px 40px 20px 40px;
   }
 
   .section-1 .right,
