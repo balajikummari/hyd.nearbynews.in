@@ -134,13 +134,18 @@ select {
 
 #pincode,
 #city {
-  max-width: 20%;
+  max-width: 50%;
   width: 100%;
+}
+
+#signup3 #pincode {
+  max-width: 20%;
 }
 
 #email {
   /* max-width: 350px; */
   width: 100%;
+  padding-right: 5.5rem;
 }
 
 #email2 {
@@ -204,6 +209,10 @@ input[type="submit"] {
   display: flex;
   justify-content: space-evenly;
 }
+#signup3M {
+  display: flex;
+  justify-content: space-evenly;
+}
 .last {
   display: inline-flex !important;
   flex: 2 0 50%;
@@ -217,6 +226,10 @@ input[type="submit"] {
 }
 
 #signup3 input {
+  margin: 0 2px;
+}
+
+#signup3M input {
   margin: 0 2px;
 }
 
@@ -267,7 +280,7 @@ input[type="submit"] {
 .section-2,
 .section-3,
 .section-4 {
-  min-height: 60vh;
+  min-height: 70vh;
   max-width: 75%;
   margin: 40px auto;
 }
@@ -368,7 +381,7 @@ a.know-more::after {
   left: -15%;
   top: 50%;
   transform: translatey(-50%);
-  width: 40%;
+  width: 45%;
 }
 
 .section-4 h2 {
@@ -376,15 +389,6 @@ a.know-more::after {
   font: normal normal 400 55px/64px "HK Grotesk";
   letter-spacing: -0.55px;
 }
-
-/* .section-4 p {
-  max-width: 531px;
-  text-align: left;
-  font: normal normal normal 23px/29px "HK Grotesk";
-  letter-spacing: -0.23px;
-  color: #9999a5;
-  text-transform: capitalize;
-} */
 
 footer {
   background: transparent linear-gradient(292deg, #ffffff 0%, #e19d00 100%) 0%
@@ -487,6 +491,61 @@ footer .content h3 {
 q {
   font-size: x-large;
 }
+.slideshow-container {
+  position: relative;
+  background: transparent;
+}
+
+.mySlides {
+  display: none;
+  padding: 40px 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.author {
+  color: cornflowerblue;
+  text-align: center;
+}
+#signup3M {
+  visibility: collapse;
+}
+#signup3 {
+  visibility: visible;
+}
+.section-2 .by2,
+.section-4 .by2 {
+  margin-left: 5rem;
+}
+.left {
+  z-index: 10;
+}
 @media screen and (max-width: 1080px) {
   p {
     font-size: 18px;
@@ -511,6 +570,11 @@ q {
     flex-wrap: wrap;
   }
   #signup3 {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+  }
+  #signup3M {
     display: flex;
     /* justify-content: flex-start; */
     flex-wrap: wrap;
@@ -557,6 +621,15 @@ q {
 }
 
 @media screen and (max-width: 780px) {
+  .section-2 .by2,
+  .section-4 .by2 {
+    margin-left: 0rem;
+  }
+  #pincode,
+  #city {
+    max-width: 50%;
+    width: 100%;
+  }
   .section-1,
   .section-2,
   .section-3,
@@ -612,9 +685,23 @@ q {
     font-size: 24px;
     line-height: 32px;
   }
+
+  #signup3 {
+    visibility: collapse;
+    height: 0px;
+  }
+  #signup3M {
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 520px) {
+  .mySlides {
+    display: none;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
   .hydlove {
     font-size: 2rem;
     text-align: center;
@@ -623,12 +710,16 @@ q {
     margin: 0rem 0rem;
   }
   q {
-    font-size: large;
+    font-size: medium;
   }
-  #pincode,
+  /* #pincode,
   #city {
     width: 47%;
     max-width: initial;
+  } */
+  .last {
+    display: inline-flex !important;
+    flex: 2 0 101%;
   }
 
   .last,
@@ -680,6 +771,7 @@ q {
 
   #pincode,
   #city {
+    max-width: 100%;
     width: 100%;
   }
 
@@ -704,22 +796,25 @@ q {
 
   .section-2 .by2 {
     flex-wrap: wrap;
-    min-height: 70vh;
+    min-height: 77vh;
+    padding: 2rem;
   }
 
   .section-2 .left {
     position: relative;
     z-index: 12;
+    margin-bottom: 15rem;
   }
 
   .section-2 img {
-    width: 95%;
+    width: 130%;
   }
 
   .section-4 .by2 {
     flex-wrap: wrap;
     min-height: 65vh;
     padding-top: 15px;
+    padding: 1rem;
   }
 
   .section-4 img {
@@ -750,23 +845,34 @@ q {
 
 @media screen and (max-width: 376px) {
   .below-hero h4 {
-    width: 100%;
+    width: 75%;
     font: normal normal 600 12px/18px Poppins;
   }
 
   #pincode,
   #city {
     width: 100%;
-    margin: 2px 0;
+    max-width: 100%;
   }
   .section-4 .by2 {
     flex-wrap: wrap;
     min-height: 75vh;
     padding-top: 15px;
+    padding: 1rem;
+    max-height: fit-content;
   }
   .section-2 .by2 {
     flex-wrap: wrap;
     min-height: 90vh;
+    padding: 1rem;
+  }
+  .section-2 .left {
+    position: relative;
+    z-index: 12;
+    margin-bottom: 9rem;
+  }
+  .section-2 img {
+    width: 130%;
   }
 }
 
@@ -796,59 +902,6 @@ select option {
 }
 .dontspamdesc {
   max-width: 470px;
-  font: normal normal normal 17px/25px "HK Grotesk";
+  font: normal normal normal 17px/30px "HK Grotesk";
   color: #9999a5;
-}
-
-.slideshow-container {
-  position: relative;
-  background: transparent;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 40px 80px;
-  text-align: center;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic;
-}
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue;
-  text-align: center;
 }
