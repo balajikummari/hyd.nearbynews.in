@@ -164,6 +164,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+::placeholder {
+  color: wheat;
+}
+
 form .last,
 #footer-signup {
   display: inline-block;
@@ -304,7 +308,7 @@ input[type="submit"] {
 .section-2 .by2,
 .section-4 .by2 {
   position: relative;
-  max-height: 303px;
+  /* max-height: 303px; */
   padding: 45px 65px;
   background: transparent linear-gradient(180deg, #0448a6 0%, #022453 100%) 0%
     0% no-repeat padding-box;
@@ -407,7 +411,7 @@ footer .content {
 
 footer .left,
 footer .right {
-  width: 40%;
+  width: 48%;
 }
 
 footer .content .right {
@@ -546,7 +550,13 @@ q {
 .left {
   z-index: 10;
 }
+.spamcon {
+  padding-left: 35%;
+}
 @media screen and (max-width: 1080px) {
+  .spamcon {
+    padding-left: 35%;
+  }
   p {
     font-size: 18px;
     line-height: 26px;
@@ -621,10 +631,6 @@ q {
 }
 
 @media screen and (max-width: 780px) {
-  .section-2 .by2,
-  .section-4 .by2 {
-    margin-left: 0rem;
-  }
   #pincode,
   #city {
     max-width: 50%;
@@ -675,6 +681,10 @@ q {
 }
 
 @media screen and (max-width: 645px) {
+  .section-2 .by2,
+  .section-4 .by2 {
+    margin-left: 0rem;
+  }
   header nav,
   #email-2 {
     min-width: 60%;
@@ -755,6 +765,9 @@ q {
 }
 
 @media screen and (max-width: 450px) {
+  .spamcon {
+    padding-left: 0%;
+  }
   .bottom {
     display: flex;
     justify-content: center;

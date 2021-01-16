@@ -223,6 +223,9 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
           }
+          window.setInterval(function () {
+            plusSlides(1);
+          }, 1000);
         </script>
       </section>
 
@@ -350,11 +353,7 @@
             method="GET"
           >
             <div style="display: flex; width: 100%">
-              <select
-                name="city"
-                id="city"
-                style="border: 3px solid #0448a6; color: #0448a6"
-              >
+              <select name="city" id="city" style="border: 3px solid #0448a6">
                 <option value="hyderabad">Hyderabad</option>
                 <option value="mumbai">Mumbai</option>
                 <option value="delhi">Delhi</option>
