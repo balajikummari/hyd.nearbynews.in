@@ -490,7 +490,7 @@ footer .content h3 {
   text-align: center;
 }
 .section-testimonials {
-  margin: 5rem 0rem;
+  margin: 5rem 0rem 0rem 0rem;
 }
 q {
   font-size: x-large;
@@ -498,6 +498,9 @@ q {
 .slideshow-container {
   position: relative;
   background: transparent;
+}
+.quote {
+  min-height: 5rem;
 }
 
 .mySlides {
@@ -572,6 +575,9 @@ q {
 }
 .spamcon {
   padding-left: 35%;
+}
+.quote {
+  min-height: 6rem;
 }
 @media screen and (max-width: 1080px) {
   .spamcon {
@@ -741,6 +747,9 @@ q {
   }
   q {
     font-size: medium;
+  }
+  .quote {
+    min-height: 10rem;
   }
   /* #pincode,
   #city {
