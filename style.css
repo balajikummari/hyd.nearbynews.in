@@ -2,12 +2,14 @@
   font-family: "HK Grotesk";
   font-weight: 400;
   src: url("/assets/fonts/HKGrotesk-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "HK Grotesk";
   font-weight: 600;
   src: url("/assets/fonts/HKGrotesk-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 body,
