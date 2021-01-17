@@ -82,9 +82,10 @@
             method="GET"
           >
             <div style="display: flex; width: 100%">
-              <select name="city" id="city">
+              <!-- <select name="city" id="city">
                 <option value="hyderabad">Hyderabad</option>
-              </select>
+              </select> -->
+              <input name="city" id="city" placeholder="Hyderabad" readonly />
               <input
                 type="number"
                 name="pincode"
@@ -360,9 +361,13 @@
             method="GET"
           >
             <div style="display: flex; width: 100%">
-              <select name="city" id="city" style="border: 3px solid #0448a6">
-                <option value="hyderabad">Hyderabad</option>
-              </select>
+              <input
+                name="city"
+                id="city"
+                placeholder="Hyderabad"
+                readonly
+                style="border: 3px solid #0448a6"
+              />
               <input
                 type="number"
                 name="pincode"
