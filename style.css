@@ -129,8 +129,12 @@ select {
   color: #fff;
 }
 
-input::placeholder,
-select {
+input::placeholder {
+  color: gray;
+}
+
+#city::placeholder {
+  color: gray;
   color: #fff;
 }
 
