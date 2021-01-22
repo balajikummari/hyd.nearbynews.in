@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script async src="script.js" /></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nearby news - Hyderabad</title>
@@ -38,6 +40,9 @@
       as="style"
     />
     <link rel="stylesheet" href="style.css" />
+
+
+    
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-589113960"
@@ -93,7 +98,11 @@
     <main>
       <section class="by2">
         <div class="hero-content">
-          <h1>Your Local News in your Inbox.</h1>
+          <div style="min-height: 10rem;">
+            <div class="output" id="output">
+              <h1 class="cursor"></h1>
+            </div>
+          </div>
           <p>
             Get your local newspaper delivered to your Email at 7am everyday.
             Experience the modern way of reading newspapers
@@ -248,6 +257,99 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
           }
+        </script>
+      </section>
+
+
+      <section class="section-testimonials">
+        <!-- <h2 class="hydPride">We take pride in ourselves for having readers who are working/worked in the following organizations </h2> -->
+        <h2 class="hydPride">We take pride  in attracting readers from organizations like...</h2>
+
+        <div class="brands-flex">
+        <img style="padding: 3px;" height="50px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/1280px-OnePlus_logo.svg_rqjj7b.png" loading="lazy" alt="">
+       
+        <img style="padding: 3px;" height="70px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/217-2170131_govt-of-india-logo-png-transparent-png-removebg-preview_tpe5ok.png" loading="lazy" alt="">
+
+        <img style="padding: 3px;" height="70px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336882/Dont%20delete/logos/s8Jxp7ks_400x400-removebg-preview_yvaftv.png" loading="lazy" alt="">
+        <img style="padding: 3px;" height="50px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/580b57fcd9996e24bc43c51f_yikatj.png" loading="lazy" alt="">
+        <img style="padding: 3px;" height="70px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336882/Dont%20delete/logos/unnamed_2_n4lmtw.png" loading="lazy" alt="">
+
+        <img  style="padding: 3px;" height="50px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/CSF-Logo-2x_tl2vtw.gif" loading="lazy" alt="">
+        <img style="padding: 3px;" height="70px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/BCG_MONOGRAM_oip1aq.png" loading="lazy" alt="">
+
+      </div>
+      </section>
+      <section class="section-testimonials">
+        <h1 class="hydlove">Check out rave reviews 🤩 </h1>
+
+        <div class="slideshow-container2">
+          <div class="mySlides2">
+            <div class="quote">
+              <a href="https://www.linkedin.com/posts/sandeepgangarapu_nearby-news-has-been-excellent-to-read-every-activity-6756868805315710976-FGbD/" target="_blank">
+                <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/Testimonial_1_althou.png" alt>
+              </a>
+            </div>
+            <p class="author">Sandeep | Ex-Google, IIT Kharagpur Alum</p>
+          </div>
+          <div class="mySlides2">
+            <div class="quote">
+              <a href="https://www.linkedin.com/posts/nachson_hyderabad-local-news-updates-nearby-news-activity-6757199139043459072-PNNX/" target="_blank">
+                <img id="linkedinimg"style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336126/Dont%20delete/Testimoniddal_ajch9x.png" alt>
+              </a>
+            </div> 
+            <p class="author">Vinay Kumar | Ex-IRS and Solarpreneur</p>
+          </div>
+          <div class="mySlides2">
+            <div class="quote">
+              <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/T3_ylbtan.png" alt>
+
+            </div>
+            <p class="author">Prem|  Marketing Manager, FitDay</p>
+          </div>
+          <div class="mySlides2">
+            <div class="quote">
+              <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/T4_wczy6m.png" alt>
+
+            </div>
+            <p class="author">Prem|  Marketing Manager, FitDay</p>
+          </div>
+          <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+          <a class="next2" onclick="plusSlides2(1)">❯</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot2" onclick="currentSlide2(1)"></span>
+          <span class="dot2" onclick="currentSlide2(2)"></span>
+          <span class="dot2" onclick="currentSlide2(3)"></span>
+          <span class="dot2" onclick="currentSlide2(4)"></span>
+        </div>
+        <script>
+          var slideIndex2 = 1;
+          showSlides2(slideIndex2);
+          function plusSlides2(n) {
+            showSlides2((slideIndex2 += n));
+          }
+          function currentSlide(n) {
+            showSlides2((slideIndex2 = n));
+          }
+          function showSlides2(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides2");
+            var dots = document.getElementsByClassName("dot2");
+            if (n > slides.length) {
+              slideIndex2 = 1;
+            }
+            if (n < 1) {
+              slideIndex2 = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex2 - 1].style.display = "block";
+            dots[slideIndex2 - 1].className += " active";
+          } 
         </script>
       </section>
       <section class="section-4">
