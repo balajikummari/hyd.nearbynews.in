@@ -344,7 +344,6 @@ footer {
   border: 1px solid #000;
 }
 footer .content {
-  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -421,7 +420,7 @@ footer .content h3 {
 .hydPride {
   font-size: 1.7rem;
   text-align: center;
-  padding: 0% 10%;
+  padding: 3% 10%;
   line-height: 3rem;
 }
 .section-testimonials {
@@ -562,7 +561,8 @@ q {
   color: white;
   min-height: 12rem;
 }
-
+.jointhem {
+}
 @media screen and (max-width: 1080px) {
   .spamcon {
     padding-left: 35%;

@@ -260,7 +260,7 @@
           } 
         </script>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" style="display: flex; flex-direction: column; align-items: center;">
         <!-- <h2 class="hydPride">We take pride in ourselves for having readers who are working/worked in the following organizations </h2> -->
         <h2 class="hydPride">We take pride  in attracting readers from organizations like...</h2>
 
@@ -277,6 +277,89 @@
         <img style="padding: 3px;" height="70px" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336881/Dont%20delete/logos/BCG_MONOGRAM_oip1aq.png" loading="lazy" alt="">
 
       </div>
+
+      <div class="jointhem">
+        <h2 class="hydPride"> join them ...</h2>
+        <form
+        id="signup3"
+        action="https://nearbynews.in/api/subscribe"
+        method="GET"
+      >
+        <input
+          name="city"
+          id="city"
+          placeholder="Hyderabad"
+          value="Hyderabad"
+          readonly
+          style="visibility: collapse; height: 0px; width: 0px"
+        />
+        <input
+          type="number"
+          name="pincode"
+          id="pincode"
+          placeholder="Pincode"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Pincode'"
+          required
+        />
+        <div class="last">
+          <input
+            type="email"
+            name="email"
+            id="email3"
+            placeholder="Email ID"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Email ID'"
+            required
+          />
+          <input
+            type="submit"
+            value="Try It"
+            onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+          />
+        </div>
+      </form>
+      <form
+        id="signup3M"
+        action="https://nearbynews.in/api/subscribe"
+        method="GET"
+        style="margin-bottom: 2rem;"
+      >
+        <input
+          name="city"
+          id="city"
+          placeholder="Hyderabad"
+          value="Hyderabad"
+          readonly
+          style="visibility: collapse; height: 0px; width: 0px"
+        />
+        <input
+          type="email"
+          name="email"
+          id="pincode"
+          placeholder="Email ID"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Email ID'"
+          required
+        />
+        <div class="last">
+          <input
+            type="number"
+            name="pincode"
+            id="email3"
+            placeholder="Pincode"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Pincode'"
+            required
+          /><input
+            type="submit"
+            value="Try It"
+            onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+          />
+        </div>
+      </form>
+      </div>
+
       </section>
       <section class="section-testimonials">
         <h1 class="hydlove">Hyderabad ❤️ us</h1>
@@ -444,57 +527,10 @@
     <footer>
       <div class="content">
         <div class="left">
-          <h3>Subscribe</h3>
-          <form
-            id="signup"
-            action="https://nearbynews.in/api/subscribe"
-            method="GET"
-          >
-            <div style="display: flex; width: 100%">
-              <input
-                name="city"
-                id="city"
-                placeholder="Hyderabad"
-                value="Hyderabad"
-                readonly
-                style="border: 3px solid #0448a6"
-              />
-              <input
-                type="number"
-                name="pincode"
-                id="pincode"
-                placeholder="Pincode"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Pincode'"
-                style="
-                  margin-right: 1px;
-                  border: 3px solid #0448a6;
-                  color: #0448a6;
-                "
-                required
-              />
-            </div>
-            <div class="last">
-              <input
-                required
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email ID"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Email ID'"
-                style="border: 3px solid #0448a6; color: #0448a6"
-              />
-              <input
-                type="submit"
-                value="Try It"
-                onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
-              />
-            </div>
-          </form>
+          <img src="assets/nearbynews.png" alt="footer logo" width="180" />
         </div>
-        <div class="right">
-          <div class="socials">
+        <div class="right"> 
+          <div class="socialss">
             <a
               href="https://twitter.com/intent/follow?screen_name=nearby_news"
               target="='_blank'"
@@ -518,9 +554,6 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="bottom">
-        <img src="assets/nearbynews.png" alt="footer logo" width="180" />
       </div>
     </footer>
   </body>
