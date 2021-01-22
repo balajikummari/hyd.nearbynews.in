@@ -560,7 +560,7 @@ q {
   text-align: center;
   font-family: "Source Code Pro", monospace;
   color: white;
-  min-height: 17rem;
+  min-height: 12rem;
 }
 
 @media screen and (max-width: 1080px) {
