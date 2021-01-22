@@ -2,10 +2,10 @@ window.setInterval(function () {
   plusSlides(1);
 }, 4000);
 
-// window.setInterval(function () {
-//   plusSlides2(1);
-// }, 4000);
-// values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
+window.setInterval(function () {
+  plusSlides2(1);
+}, 4000);
+
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
   a = 0,
