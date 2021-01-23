@@ -438,6 +438,12 @@ q {
 .quote {
   min-height: 5rem;
 }
+.quote2 {
+  display: flex;
+  min-height: 18rem;
+  align-items: center;
+  justify-content: center;
+}
 .mySlides {
   display: none;
   padding: 40px 80px 0px 80px;
@@ -472,7 +478,6 @@ q {
 }
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
@@ -480,7 +485,7 @@ q {
 .next2 {
   cursor: pointer;
   position: relative;
-  bottom: 10rem;
+  bottom: 15rem;
   width: auto;
 
   padding: 16px;
@@ -497,7 +502,6 @@ q {
 }
 .prev2:hover,
 .next2:hover {
-  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
@@ -544,6 +548,7 @@ q {
 }
 .section-4 .by2 {
   margin-left: 5rem;
+  margin-bottom: 2rem;
 }
 .left {
   z-index: 10;
@@ -561,8 +566,52 @@ q {
   color: white;
   min-height: 12rem;
 }
-.jointhem {
+
+img.oneplus {
+  height: 50px;
+  padding: 3px;
 }
+
+img.ias {
+  height: 70px;
+  padding: 3px 10px;
+}
+
+img.google {
+  height: 50px;
+  padding: 3px 0px 0px 0px;
+}
+
+img.tel {
+  height: 70px;
+  padding: 3px 10px 3px 30px;
+}
+
+img.ap {
+  height: 77px;
+  padding: 3px 10px 3px 30px;
+}
+
+img.cs {
+  height: 50px;
+  padding: 3px 10px;
+}
+
+img.bcg {
+  height: 70px;
+  padding: 3px;
+}
+
+img.del {
+  height: 30px;
+  padding: 3px 20px 0px 0px;
+}
+
+img.ms {
+  height: 30px;
+  padding: 3px;
+}
+
 @media screen and (max-width: 1080px) {
   .spamcon {
     padding-left: 35%;
@@ -682,6 +731,10 @@ q {
   }
 }
 @media screen and (max-width: 645px) {
+  .prev2,
+  .next2 {
+    bottom: 11rem;
+  }
   .output {
     min-height: 6rem;
   }
@@ -712,6 +765,60 @@ q {
   }
 }
 @media screen and (max-width: 520px) {
+  img.oneplus {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.ias {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.google {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.tel {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.ap {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.cs {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.bcg {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.del {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
+  img.ms {
+    height: auto;
+    width: 15%;
+    padding: 0px;
+  }
+
   .mySlides {
     display: none;
     padding: 40px 30px 0px 30px;
@@ -736,6 +843,10 @@ q {
     font-size: medium;
   }
   .quote {
+    min-height: 10rem;
+  }
+
+  .quote2 {
     min-height: 10rem;
   }
   .last {
@@ -913,28 +1024,16 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 10s slidy infinite;
 }
 
 .brands-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 26px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0rem;
+  padding: 0rem 0rem;
 }
 
-/* .output h1 {
-  font-size: 30px;
-} */
-/* Cursor Styling */
 .cursor::after {
   content: "";
   display: inline-block;
