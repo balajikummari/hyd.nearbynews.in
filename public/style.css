@@ -42,7 +42,7 @@ a {
 header,
 main,
 footer {
-  padding: 20 90px;
+  padding: 0 90px;
 }
 header {
   display: flex;
@@ -357,7 +357,6 @@ footer .content .right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right: 4rem;
 }
 footer .content h3 {
   text-align: left;
@@ -676,6 +675,18 @@ img.ms {
   }
 }
 @media screen and (max-width: 780px) {
+  footer .content .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 0rem 0rem;
+  }
   .mySlides2 {
     padding: 40px 40px 0px 40px;
   }
@@ -765,14 +776,7 @@ img.ms {
     visibility: visible;
   }
 }
-
 @media screen and (max-width: 520px) {
-  .socials {
-    padding-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-  }
   img.oneplus {
     height: auto;
     width: 25%;
@@ -818,6 +822,7 @@ img.ms {
   img.del {
     height: auto;
     width: 25%;
+    padding: 0px;
   }
 
   img.ms {
@@ -896,11 +901,7 @@ img.ms {
     justify-content: center;
     padding-top: 1rem;
   }
-  footer .content .right {
-    justify-content: center;
-    align-items: center;
-    padding: 0rem;
-  }
+
   header nav,
   #email-2 {
     min-width: 45%;
