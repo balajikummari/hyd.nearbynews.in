@@ -448,14 +448,23 @@ q {
   display: none;
   padding: 40px 80px 0px 80px;
   text-align: center;
-  animation: 10s slidy infinite;
+  animation: fade 1s;
 }
 
 .mySlides2 {
   display: none;
   padding: 40px 80px 0px 80px;
   text-align: center;
-  animation: 10s slidy infinite;
+  animation: fade 0.5s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 .prev,
 .next {
@@ -822,7 +831,6 @@ img.ms {
   img.del {
     height: auto;
     width: 25%;
-    padding: 0px;
   }
 
   img.ms {
