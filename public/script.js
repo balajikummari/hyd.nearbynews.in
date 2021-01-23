@@ -16,6 +16,7 @@ var i = 0,
 var textArray = [
   "Your Local News in your Inbox",
   "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
 ];
 
 // Speed (in milliseconds) of typing.
