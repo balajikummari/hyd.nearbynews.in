@@ -89,3 +89,44 @@ function typeWriter(id, ar) {
     }
   }
 }
+
+const pincodes = document.querySelectorAll('input[name="pincode"]');
+
+pincodes.forEach(function (pincode) {
+  pincode.addEventListener("input", function (event) {
+    if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity("Please Provide a valid Pincode");
+    }
+    if (event.target.validity.patternMismatch) {
+      event.target.setCustomValidity("Please Provide a valid Pincode");
+    } else {
+      event.target.setCustomValidity("");
+    }
+  });
+});
+
+const emails = document.querySelectorAll('input[name="email"]');
+
+emails.forEach(function (email) {
+  email.addEventListener("input", function (event) {
+    if (event.target.validity.valueMissing) {
+      event.target.setCustomValidity("Please Provide a valid Email");
+    }
+    if (event.target.validity.patternMismatch) {
+      event.target.setCustomValidity("Please Provide a valid Email");
+    } else {
+      event.target.setCustomValidity("");
+    }
+  });
+});
+
+// email.addEventListener("input", function (event) {
+//   if (email.validity.typeMismatch) {
+//     email.setCustomValidity("expecting an valid e-mail address!");
+//   }
+//   if (event.target.validity.patternMismatch) {
+//     event.target.setCustomValidity("expecting an valid e-mail address!");
+//   } else {
+//     email.setCustomValidity("");
+//   }
+// });
