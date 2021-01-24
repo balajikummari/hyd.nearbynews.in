@@ -119,14 +119,3 @@ emails.forEach(function (email) {
     }
   });
 });
-
-// email.addEventListener("input", function (event) {
-//   if (email.validity.typeMismatch) {
-//     email.setCustomValidity("expecting an valid e-mail address!");
-//   }
-//   if (event.target.validity.patternMismatch) {
-//     event.target.setCustomValidity("expecting an valid e-mail address!");
-//   } else {
-//     email.setCustomValidity("");
-//   }
-// });
