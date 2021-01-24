@@ -191,7 +191,7 @@
         <h1 class="hydlove">Check out our rave reviews 🤩 </h1>
 
         <div class="slideshow-container2">
-          <div class="mySlides2">
+          <div onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" class="mySlides2">
             <div class="quote2">
               <a href="https://www.linkedin.com/posts/sandeepgangarapu_nearby-news-has-been-excellent-to-read-every-activity-6756868805315710976-FGbD/" target="_blank">
                 <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/Testimonial_1_althou.png" alt>
@@ -199,7 +199,7 @@
             </div>
             <p class="author">Sandeep | Ex-Google, IIT Kharagpur Alum</p>
           </div>
-          <div class="mySlides2">
+          <div onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" class="mySlides2">
             <div class="quote2">
               <a href="https://www.linkedin.com/posts/nachson_hyderabad-local-news-updates-nearby-news-activity-6757199139043459072-PNNX/" target="_blank">
                 <img id="linkedinimg"style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611336126/Dont%20delete/Testimoniddal_ajch9x.png" alt>
@@ -207,7 +207,7 @@
             </div> 
             <p class="author">Vinay Kumar | Ex-IRS and Solarpreneur</p>
           </div>
-          <div class="mySlides2">
+          <div onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" class="mySlides2">
             <div class="quote2">
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:6757647641515040768/" target="_blank">
                 <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/T3_ylbtan.png" alt>
@@ -215,7 +215,7 @@
             </div>
             <p class="author">Akhil Neelam | Central Square Foundation</p>
           </div>
-          <div class="mySlides2">
+          <div onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" class="mySlides2">
             <div class="quote2">
               <a href="https://www.linkedin.com/feed/update/urn:li:activity:6756932825682968576/" target="_blank">
                 <img id="linkedinimg" style="border-radius: 0.7rem;" src="https://res.cloudinary.com/nearbynews/image/upload/v1611335268/Dont%20delete/T4_wczy6m.png" alt>
@@ -234,12 +234,19 @@
         </div>
         <script>
           var slideIndex2 = 1;
+          var mouse = false;
+          function mouseStatus(n) {
+              mouse = n;
+          }
           showSlides2(slideIndex2);
+
           function plusSlides2(n) {
-            showSlides2((slideIndex2 += n));
+            if (!mouse) {
+              showSlides2((slideIndex2 += n));
+            }
           }
           function currentSlide(n) {
-            showSlides2((slideIndex2 = n));
+              showSlides2((slideIndex2 = n));
           }
           function showSlides2(n) {
             var i;
@@ -369,7 +376,7 @@
       <section class="section-testimonials">
         <h1 class="hydlove">Hyderabad ❤️ us</h1>
         <div class="slideshow-container">
-          <div class="mySlides">
+          <div class="mySlides"  onmouseover="mouseStatus2(true);" onmouseout="mouseStatus2(false);" >
             <div class="quote">
               <q
                 >I was a morning newspaper person earlier but moved to social
@@ -379,7 +386,7 @@
             </div>
             <p class="author">Niharika Gupta | Begumpet</p>
           </div>
-          <div class="mySlides">
+          <div class="mySlides" onmouseover="mouseStatus2(true);" onmouseout="mouseStatus2(false);" >
             <div class="quote">
               <q
                 >I consume State and National News from Apps and TV, but staying
@@ -389,7 +396,7 @@
             </div>
             <p class="author">Ujwal Gattupalli | Kukatpally</p>
           </div>
-          <div class="mySlides">
+          <div class="mySlides" onmouseover="mouseStatus2(true);" onmouseout="mouseStatus2(false);" >
             <div class="quote">
               <q
                 >I am from North India who recently moved to Hyderabad for work,
@@ -411,8 +418,14 @@
         <script>
           var slideIndex = 1;
           showSlides(slideIndex);
+          var mouse2 = false;
+          function mouseStatus2(n) {
+              mouse2 = n;
+          }
           function plusSlides(n) {
-            showSlides((slideIndex += n));
+            if(!mouse2){
+              showSlides((slideIndex += n));
+            }
           }
           function currentSlide(n) {
             showSlides((slideIndex = n));
