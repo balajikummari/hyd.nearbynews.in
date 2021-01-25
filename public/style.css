@@ -621,6 +621,10 @@ img.ms {
   padding: 3px;
 }
 
+.repFont {
+  font-size: xx-large;
+}
+
 @media screen and (max-width: 1080px) {
   .spamcon {
     padding-left: 35%;
@@ -752,6 +756,10 @@ img.ms {
   }
 }
 @media screen and (max-width: 645px) {
+  .repFont {
+    font-size: x-large;
+  }
+
   .prev2,
   .next2 {
     bottom: 11rem;
@@ -1016,7 +1024,7 @@ img.ms {
 }
 #subHighlight2 {
   font-weight: 500;
-  font: normal normal bold 18px/37px poppins;
+  font-family: poppins;
 }
 select option {
   padding: 1rem;
