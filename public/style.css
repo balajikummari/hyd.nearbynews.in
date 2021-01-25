@@ -207,7 +207,7 @@ input[type="submit"] {
 .below-hero {
   width: 60%;
   max-height: 146px;
-  margin: 38px 0;
+  margin: 100px 0px 30px 0px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -734,6 +734,7 @@ img.ms {
   }
   .below-hero {
     width: 100%;
+    margin: 50px 0px 30px 0px;
   }
   .hero-content h1 {
     font-size: 36px;
