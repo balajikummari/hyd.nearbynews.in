@@ -40,25 +40,34 @@
       as="style"
     />
     <link rel="stylesheet" href="style.css" />
-
-
-    
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-589113960"
-    ></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YMYE8GKVB"></script>
-
+    <script  src="https://www.googletagmanager.com/gtag/js?id=G-5YMYE8GKVB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "AW-589113960");
       gtag('config', 'G-5YMYE8GKVB');
-
+      gtag("config", "AW-589113960");
     </script>
+
+    <!-- Event snippet for Website lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+  
 
     <link
       rel="icon"
@@ -138,8 +147,8 @@
               <input
                 type="submit"
                 value="Try It"
-                onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
-              />
+                onclick="gtag_report_conversion()"
+              />  
             </div>
           </form>
         </div>
@@ -313,7 +322,7 @@
           <input
             type="submit"
             value="Try It"
-            onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+            onclick="gtag_report_conversion()"
           />
         </div>
       </form>
@@ -353,7 +362,7 @@
           /><input
             type="submit"
             value="Try It"
-            onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+            onclick="gtag_report_conversion()"
           />
         </div>
       </form>
@@ -484,7 +493,7 @@
                 <input
                   type="submit"
                   value="Try It"
-                  onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+                  onclick="gtag_report_conversion()"
                 />
               </div>
             </form>
@@ -523,7 +532,7 @@
                 /><input
                   type="submit"
                   value="Try It"
-                  onclick="window.gtag('event', 'conversion', { send_to: 'AW-589113960/9Uc7CJ-Qye8BEOjU9JgC' });"
+                  onclick="gtag_report_conversion()"
                 />
               </div>
             </form>
