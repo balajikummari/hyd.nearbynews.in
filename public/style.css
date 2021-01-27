@@ -695,8 +695,8 @@ img.ms {
   }
   #pincode,
   #email {
-    width: 41%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 780px) {
@@ -728,8 +728,8 @@ img.ms {
   }
   #pincode,
   #city {
-    width: 41%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
   .section-1,
   .section-2,
@@ -953,8 +953,8 @@ img.ms {
   }
   #pincode,
   #city {
-    width: 41%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
   .below-hero h4 {
     width: 112px;
@@ -1021,8 +1021,8 @@ img.ms {
   }
   #pincode,
   #city {
-    width: 41%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
   .section-4 .by2 {
     flex-wrap: wrap;
