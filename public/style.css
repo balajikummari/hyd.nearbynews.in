@@ -121,6 +121,11 @@ input::placeholder {
   max-width: 7rem;
   width: 100%;
 }
+#pincode1,
+#city1 {
+  max-width: 7rem;
+  width: 100%;
+}
 #signup3 #pincode {
   max-width: 20%;
 }
@@ -731,6 +736,11 @@ img.ms {
     width: 100%;
     max-width: 100%;
   }
+  #pincode1,
+  #city1 {
+    width: 100%;
+    max-width: 41%;
+  }
   .section-1,
   .section-2,
   .section-3,
@@ -957,6 +967,11 @@ img.ms {
     width: 100%;
     max-width: 100%;
   }
+  #pincode1,
+  #city1 {
+    width: 100%;
+    max-width: 42%;
+  }
   .below-hero h4 {
     width: 112px;
     font: normal normal 600 16px/24px Poppins;
@@ -1024,6 +1039,11 @@ img.ms {
   #city {
     width: 100%;
     max-width: 100%;
+  }
+  #pincode1,
+  #city1 {
+    width: 100%;
+    max-width: 41%;
   }
   .section-4 .by2 {
     flex-wrap: wrap;
