@@ -14,9 +14,31 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
+  "",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
   "Your Local News in your Inbox",
   "Build a new habit this 2021",
   "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
+  "Build a new habit this 2021",
+  "Be Smarter about 'local' in 5 Minutes",
+  "Your Local News in your Inbox",
 ];
 
 // Speed (in milliseconds) of typing.
